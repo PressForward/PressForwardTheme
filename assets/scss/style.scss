@@ -1,10 +1,10 @@
 /******************************************************************
-	
+
 Stylesheet: Main Stylesheet
 
 Here's where the magic happens. Here is where you import
 all of your Sass files so they can compile into one
-CSS file. 
+CSS file.
 
 ******************************************************************/
 
@@ -62,7 +62,7 @@ CSS file.
   @include foundation-top-bar;
   @include foundation-visibility-classes;
   @include foundation-float-classes;
-
+  
 // Import your custom styles
 @import "main";
 
