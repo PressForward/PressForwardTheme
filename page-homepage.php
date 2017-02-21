@@ -52,7 +52,7 @@ Template Name: Homepage
 
 		</div> <!-- end #inner-content (row) -->
 
-		<div class="row">
+		<div id="block2" class="expanded row">
 			<div class="large-12 columns">
 				<h2>Gather</h2>
 			</div>
@@ -67,7 +67,7 @@ Template Name: Homepage
 			</div>
 		</div>
 
-		<div class="row">
+		<div id="block3" class="expanded row">
 			<div class="large-12 columns ">
 				<h2>Organize</h2>
 			</div>
@@ -83,7 +83,7 @@ Template Name: Homepage
 			</div>
 		</div>
 
-		<div class="row">
+		<div id="block4" class="expanded row">
 			<div class="large-12 columns">
 				<h2>Publish</h2>
 			</div>
@@ -99,7 +99,7 @@ Template Name: Homepage
 			</div>
 		</div>
 
-		<div clas="row">
+		<div id="block5" class="expanded row">
 			<div class="large-12 columns">
 				<h2>Use Cases</h2>
 			</div>
