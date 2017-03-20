@@ -1,6 +1,7 @@
 .menu-title a {
   color: black;
-  font-weight: 700;
+  font-family: 'Clear Sans Medium';
+  letter-spacing: 1px;
   font-size: 2rem;
 }
 .menu > li > a img, .menu > li > a i, .menu > li > a svg {
@@ -11,18 +12,23 @@
   h1, h2{
   text-align: center;
   margin-bottom: 25px;
+  letter-spacing: 1px;
+
   }
   h1 {
-    font-weight: 700;
+    font-family: "Clear Sans Medium";
 
   }
   h2 {
-    font-weight: 400;
+    font-family: 'Clear Sans Light';
 
+  }
+  h3 {
+    font-family: 'Clear Sans Light';
   }
   .button .primary {
     margin-top: 25px;
-    font-weight: 600;
+    font-family: 'Clear Sans Bold';
   }
 }
 
