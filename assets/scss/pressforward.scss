@@ -1,6 +1,6 @@
 .menu-title a {
   color: black;
-  font-family: 'Clear Sans Medium';
+  font-family: 'Montserrat';
   letter-spacing: 1px;
   font-size: 2rem;
 }
@@ -11,30 +11,62 @@
 #block1 {
   h1, h2{
   text-align: center;
-  margin-bottom: 25px;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
+  letter-spacing: 0px;
 
   }
   h1 {
-    font-family: "Clear Sans Medium";
+    font-family: "Montserrat";
+    font-weight: 600;
 
   }
   h2 {
-    font-family: 'Clear Sans Light';
+    font-family: 'Montserrat';
+    font-weight: 400;
 
   }
   h3 {
-    font-family: 'Clear Sans Light';
+    font-family: 'Montserrat';
+    font-weight: 400;
   }
   .button .primary {
     margin-top: 25px;
-    font-family: 'Clear Sans Bold';
+    font-family: 'Montserrat';
+    font-weight: 600;
   }
 }
-
+#featuregroups {
+  margin-top: 25px;
+}
+.homepageimage{
+  margin: 15px;
+}
+#block2 {
+  .row {
+  padding: 25px; }
+  .large-8{
+    padding-top: 50px;
+  }
+}
+#block3 {
+  .row {
+  padding: 25px; }
+  .large-8 {
+    padding: 50px;
+  }
+}
+#block4 > .row {
+  padding: 25px;
+  .large-8 {
+    padding: 50px;
+  }
+}
 #block2, #block4{
   background: #e5e5e5;
 }
 .fa-square {
   color: #2bb24c;
+}
+#downloadbtn > a {
+  margin: 25px 0 25px 0;
 }

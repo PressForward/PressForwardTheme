@@ -8,7 +8,7 @@ all of your Sass files so they can compile into one
 CSS file.
 
 ******************************************************************/
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,500i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Open+Sans:400,600,700");
 /******************************************************************
 
 Stylesheet: Mixins & Constants Stylesheet
@@ -31,62 +31,6 @@ COLORS
 /*********************
 TYPOGRAPHY
 *********************/
-@font-face {
-  font-family: 'Clear Sans Bold';
-  src: url("../fonts/ClearSans-Bold-webfont.eot");
-  src: url("../fonts/ClearSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Bold-webfont.woff") format("woff"), url("../fonts/ClearSans-Bold-webfont.ttf") format("truetype"), url("../fonts/ClearSans-Bold-webfont.svg#clear_sansbold") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Bold Italic';
-  src: url("../fonts/ClearSans-BoldItalic-webfont.eot");
-  src: url("../fonts/ClearSans-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-BoldItalic-webfont.woff") format("woff"), url("../fonts/ClearSans-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/ClearSans-BoldItalic-webfont.svg#clear_sansbold_italic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Italic';
-  src: url("../fonts/ClearSans-Italic-webfont.eot");
-  src: url("../fonts/ClearSans-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Italic-webfont.woff") format("woff"), url("../fonts/ClearSans-Italic-webfont.ttf") format("truetype"), url("../fonts/ClearSans-Italic-webfont.svg#clear_sansitalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Light';
-  src: url("../fonts/ClearSans-Light-webfont.eot");
-  src: url("../fonts/ClearSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Light-webfont.woff") format("woff"), url("../fonts/ClearSans-Light-webfont.ttf") format("truetype"), url("../fonts/ClearSans-Light-webfont.svg#clear_sans_lightregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Medium';
-  src: url("../fonts/ClearSans-Medium-webfont.eot");
-  src: url("../fonts/ClearSans-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Medium-webfont.woff") format("woff"), url("../fonts/ClearSans-Medium-webfont.ttf") format("truetype"), url("../fonts/ClearSans-Medium-webfont.svg#clear_sans_mediumregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Medium Italic';
-  src: url("../fonts/ClearSans-MediumItalic-webfont.eot");
-  src: url("../fonts/ClearSans-MediumItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-MediumItalic-webfont.woff") format("woff"), url("../fonts/ClearSans-MediumItalic-webfont.ttf") format("truetype"), url("../fonts/ClearSans-MediumItalic-webfont.svg#clear_sans_mediumitalic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Regualr';
-  src: url("../fonts/ClearSans-Regular-webfont.eot");
-  src: url("../fonts/ClearSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Regular-webfont.woff") format("woff"), url("../fonts/ClearSans-Regular-webfont.ttf") format("truetype"), url("../fonts/ClearSans-Regular-webfont.svg#clear_sansregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Clear Sans Thin';
-  src: url("../fonts/ClearSans-Thin-webfont.eot");
-  src: url("../fonts/ClearSans-Thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ClearSans-Thin-webfont.woff") format("woff"), url("../fonts/ClearSans-Thin-webfont.ttf") format("truetype"), url("../fonts/ClearSans-Thin-webfont.svg#clear_sans_thinregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic; }
@@ -97,7 +41,7 @@ CSS3 GRADIENTS.
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
 .menu-title a {
   color: black;
-  font-family: 'Clear Sans Medium';
+  font-family: 'Montserrat';
   letter-spacing: 1px;
   font-size: 2rem; }
 
@@ -106,27 +50,57 @@ CSS3 GRADIENTS.
 
 #block1 h1, #block1 h2 {
   text-align: center;
-  margin-bottom: 25px;
-  letter-spacing: 1px; }
+  margin-bottom: 10px;
+  letter-spacing: 0px; }
 
 #block1 h1 {
-  font-family: "Clear Sans Medium"; }
+  font-family: "Montserrat";
+  font-weight: 600; }
 
 #block1 h2 {
-  font-family: 'Clear Sans Light'; }
+  font-family: 'Montserrat';
+  font-weight: 400; }
 
 #block1 h3 {
-  font-family: 'Clear Sans Light'; }
+  font-family: 'Montserrat';
+  font-weight: 400; }
 
 #block1 .button .primary {
   margin-top: 25px;
-  font-family: 'Clear Sans Bold'; }
+  font-family: 'Montserrat';
+  font-weight: 600; }
+
+#featuregroups {
+  margin-top: 25px; }
+
+.homepageimage {
+  margin: 15px; }
+
+#block2 .row {
+  padding: 25px; }
+
+#block2 .large-8 {
+  padding-top: 50px; }
+
+#block3 .row {
+  padding: 25px; }
+
+#block3 .large-8 {
+  padding: 50px; }
+
+#block4 > .row {
+  padding: 25px; }
+  #block4 > .row .large-8 {
+    padding: 50px; }
 
 #block2, #block4 {
   background: #e5e5e5; }
 
 .fa-square {
   color: #2bb24c; }
+
+#downloadbtn > a {
+  margin: 25px 0 25px 0; }
 
 /**
  * Foundation for Sites by ZURB
@@ -1016,7 +990,7 @@ body {
   margin: 0;
   padding: 0;
   background: #fefefe;
-  font-family: "clear_sansregular", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1881,9 +1855,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "clear_sansregular", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 600;
   color: inherit;
   text-rendering: optimizeLegibility; }
   h1 small,
@@ -2178,10 +2152,6 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #cacaca; }
 
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca; }
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: #cacaca; }
@@ -2362,8 +2332,6 @@ select {
   border-color: #cc4b37;
   background-color: #f9ecea; }
   .is-invalid-input:not(:focus)::-webkit-input-placeholder {
-    color: #cc4b37; }
-  .is-invalid-input:not(:focus)::-moz-placeholder {
     color: #cc4b37; }
   .is-invalid-input:not(:focus):-ms-input-placeholder {
     color: #cc4b37; }
