@@ -67,12 +67,17 @@ Template Name: Homepage
 					<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
 					<li>Grab content from around the web with the "Nominate This" bookmarklet.</li>
 				</ul>
-				<a class="hollow button primary" href="#">Read more</a>
+				<a class="button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
 				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_with_gravity.png';?>">
 			</div>
 
+		</div>
+		<div class="row text-center row-rule">
+			<div class="small-3 small-centered columns">
+			<hr>
+		</div>
 		</div>
 	</div>
 
@@ -82,29 +87,41 @@ Template Name: Homepage
 				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/placeholder.jpg';?>">
 			</div>
 			<div class="large-8 medium-8 small-12 columns">
-				<h2>Organize</h2>
+				<h1>Organize</h1>
 				<ul>
 					<li>Read and review content without leaving your WordPress dashboard.</li>
 					<li>Select and draft the posts you want to share with your community</li>
 					<li>Use folders to group feeds and filter posts</li>
 				</ul>
+				<a class="button primary" href="#">Read more</a>
 			</div>
+		</div>
+		<div class="row text-center row-rule">
+			<div class="small-3 small-centered columns">
+			<hr>
+		</div>
 		</div>
 	</div>
 
 		<div id="block4" class="expanded row">
 			<div class="row">
 			<div class="large-8 medium-8 small-12 columns">
-				<h2>Publish</h2>
+				<h1>Publish</h1>
 				<ul>
 					<li>Preserve original metadata and redirect to the source.</li>
 					<li>Amplify chosen content by publishing it to your site or sharing it on twitter.</li>
 					<li>Engage your community by featuring recent and relevant content all in one place.</li>
 				</ul>
+				<a class="button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
 				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/placeholder.jpg';?>">
 			</div>
+		</div>
+		<div class="row text-center row-rule">
+			<div class="small-3 small-centered columns">
+			<hr>
+		</div>
 		</div>
 	</div>
 

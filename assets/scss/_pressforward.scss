@@ -79,7 +79,7 @@ body{
 .homepageimage{
   margin: 15px;
 }
-#block2 {
+#block2, #block3, #block4 {
   h1 {
     font-weight: 500;
     letter-spacing: 1px;
@@ -96,32 +96,12 @@ body{
  }
 
 }
-#block3 {
-  h2 {
-    font-weight: 400;
-  }
-  .row {
-  padding: 25px; }
-  .large-8 {
-    padding: 50px;
-  }
+.button.primary {
+  color: $white;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
-#block4 > .row {
-  padding: 25px;
-  .large-8 {
-    padding: 50px;
-  }
-}
-#block2, #block4{
 
-  h2{
-
-  }
-  img {
-
-  }
-
-}
 .menu-item > a {
   color: black !important;
 }
