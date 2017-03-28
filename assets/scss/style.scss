@@ -11,7 +11,7 @@ CSS file.
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Open+Sans:400,600,700');
 // Import custom mixins
 @import "mixins";
-@import "pressforward.scss";
+
 
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
@@ -66,7 +66,7 @@ CSS file.
   @include foundation-float-classes;
 
 @import "main";
-
+@import "pressforward";
 // Import your retina/HD styles
 @import "2x";
 

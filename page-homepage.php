@@ -54,16 +54,19 @@ Template Name: Homepage
 
 		<div id="block2" class="expanded row">
 			<div class="row">
-			<div class="large-8 medium-8 small-12 columns">
+
+					<div class="medium-8 small-12 columns">
 				<h2>Gather</h2>
 				<ul>
 					<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
 					<li>Grab content from around the web with the "Nominate This" bookmarklet.</li>
 				</ul>
+				<a class="hollow button secondary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/placeholder.jpg';?>">
+				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_with_gravity.png';?>">
 			</div>
+
 		</div>
 	</div>
 
@@ -99,66 +102,79 @@ Template Name: Homepage
 		</div>
 	</div>
 
-		<div id="block5" class="expanded row">
-			<div class="row">
-				<h2>Use Cases</h2>
 
-				<div class="large-3 columns">
-				<div class="card">
-  				<div class="card-divider text-center">
-    			<h3>Classrooms</h3>
-  				</div>
 
-  				<div class="card-section">
-    			<h4>This is a card.</h4>
-    			<p>It has an easy to override visual style, and is appropriately subdued.</p>
-  				</div>
-					</div>
-				</div>
-				<div class="large-3 columns">
-					<div class="card" >
-	  				<div class="card-divider text-center">
-	    			<h3>Institutions</h3>
-	  				</div>
+	<div id="content2" class="slider-container">
+	<div class="row">
+	<div class="medium-12 large-12 columns">
+		<?php $slider_autoplay = false;
+		echo '<div class="orbit" role="region" data-options="' . $slider_autoplay . '" aria-label="Editor\'s Choice" data-orbit>'; ?>
+	  	<ul class="orbit-container">
+	    	<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+	    	<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
-	  				<div class="card-section">
-	    			<h4>This is a card.</h4>
-	    			<p>It has an easy to override visual style, and is appropriately subdued.</p>
-	  				</div>
-						</div>
-					</div>
-						<div class="large-3 columns">
-						<div class="card" >
-		  				<div class="card-divider text-center">
-		    			<h3>Communities</h3>
-		  				</div>
+				<?php
+				//get slider category ids from customizer option
 
-		  				<div class="card-section">
-		    			<h4>This is a card.</h4>
-		    			<p>It has an easy to override visual style, and is appropriately subdued.</p>
-		  				</div>
-							</div>
-						</div>
-							<div class="large-3 columns">
-							<div class="card">
-			  				<div class="card-divider text-center">
-			    			<h3>Organziations</h3>
-			  				</div>
-			  	
-			  				<div class="card-section">
-			    			<h4>This is a card.</h4>
-			    			<p>It has an easy to override visual style, and is appropriately subdued.</p>
-			  				</div>
-								</div>
-							</div>
 
-		</div>
-		</div>
+				//$slider_categories_option = Kirki::get_option( 'pftk_opts', 'slider_category');
+				//get number of posts from customizer option
+				//$slider_numposts_option = Kirki::get_option( 'pftk_opts', 'slider_numposts' );
+				//$slider_title_num_words = Kirki::get_option('pftk_opts', 'slider-title-numwords');
+				//$slider_excerpt_num_words = Kirki::get_option('pftk_opts', 'slider-excerpt-numwords');
+				$postcats = 'category=34&posts_per_page=4';
+				$feat_posts = get_posts($postcats);
+				$bullets = 1;
+				foreach($feat_posts as $post) {
+	        $trim_title = get_post_field('post_title', $id);
+	        $short_title = wp_trim_words( $trim_title, $numwords = 25, $more = '… ' );
+					$trimexcerpt = get_post_field('post_content', $id);
+					$authorid = $post->post_author;
+					include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+					if ( is_plugin_active( 'pressforward/pressforward.php' ) ) {
+	  			//plugin is activated
+					$itemauth = get_post_meta($post->ID, 'item_author', true);
+					}
+	        $shortexcerpt = wp_trim_words( $trimexcerpt, $numwords = 75, $more = '… ' );
+							echo '<li class="orbit-slide">';
+							echo '<div class="row">';
+							echo '<div class="medium-11 large-11 columns"><h2>' . $short_title . '</h2></div></div>';
+							echo '<div class="row">';
+							echo '<div class="medium-6 large-7 columns">';
+
+							echo '<p class="info-title">' . $shortexcerpt . '</p> <a href="' . get_permalink() . '
+							" alt="' . get_the_title() . '" class="hollow button primary">Read More</a></div>';
+							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+							echo '<div class="large-5 medium-6 columns">';
+							if(empty($thumb)) {
+								echo '';
+							} else {
+								echo '<img src="' . $thumb[0] . '" class="thumbnail home"></div>';
+							}
+							echo '</div>';
+							echo '</li>';
+							$bullets++;
+				}
+	?>
+	</ul>
+	<nav class="orbit-bullets" id="slider-nav">
+			<?php
+			$counter = 0;
+			while($counter < $bullets - 1) {
+				if ($counter == 0) {
+				echo '<button data-slide="'. $counter . '"><span class="show-for-sr">slide details.</span><span class="show-for-sr">Current Slide</span></button>';
+				$counter++;
+			} elseif ($counter < $bullets - 1) {
+				echo '<button data-slide="'. $counter . '"><span class="show-for-sr">slide details.</span></button>';
+				$counter++;
+			}
+			} ?>
+	  </nav>
+		</div> <!-- close .orbit -->
 	</div>
-
-
-
-
-	</div> <!-- end #content -->
+	</div><!--  close .row #slider -->
+	</div>
+	</div>
+	<!-- </div> end content -->
 
 <?php get_footer(); ?>

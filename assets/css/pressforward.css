@@ -4,9 +4,6 @@
   letter-spacing: 1px;
   font-size: 2rem; }
 
-.menu > li > a img, .menu > li > a i, .menu > li > a svg {
-  color: orange; }
-
 #block1 h1, #block1 h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -53,7 +50,9 @@
     padding: 50px; }
 
 #block2, #block4 {
-  background: #e5e5e5; }
+  background: #3498db;
+  color: white;
+  font-size: img; }
 
 .fa-square {
   color: #2bb24c; }

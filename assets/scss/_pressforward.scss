@@ -1,18 +1,48 @@
+.slider-container {
+
+	padding: 30px 0 25px 0;
+	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+
+	}
+	h1 {
+
+		margin: 0;
+
+	}
+	h2 {
+    font-weight: 400;
+	}
+	.orbit-slide {
+		margin-left: 70px;
+		margin-right: 70px;
+	}
+	.slidertext {
+		margin-top: 25px;
+		// float: left;
+		width: 60%;
+	}
+	.slider-byline {
+		margin-top: 20px;
+	}
+
+	p {
+
+	}
+}
+
+
 .menu-title a {
   color: black;
   font-family: 'Montserrat';
   letter-spacing: 1px;
   font-size: 2rem;
 }
-.menu > li > a img, .menu > li > a i, .menu > li > a svg {
-  color: orange;
-}
+
 
 #block1 {
   h1, h2{
   text-align: center;
   margin-bottom: 10px;
-  letter-spacing: 0px;
 
   }
   h1 {
@@ -42,13 +72,23 @@
   margin: 15px;
 }
 #block2 {
+  h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
   .row {
   padding: 25px; }
   .large-8{
     padding-top: 50px;
   }
+  a > .button {
+    margin-top: 55px;
+  }
 }
 #block3 {
+  h2 {
+    font-weight: 400;
+  }
   .row {
   padding: 25px; }
   .large-8 {
@@ -62,7 +102,17 @@
   }
 }
 #block2, #block4{
-  background: #e5e5e5;
+  
+  h2{
+  font-weight: 400;
+  }
+  img {
+
+  }
+
+}
+.menu-item > a {
+  color: black !important;
 }
 .fa-square {
   color: #2bb24c;
