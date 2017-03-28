@@ -7,6 +7,36 @@ Template Name: Partner Mosaic
 
 <div id="content">
 
+  <div id="inner-content" class="row">
+    <main id="main" class="large-12 medium-12 columns" role="main">
+  <h1><?php the_title(); ?></h1>
+<div class="row small-up-2 medium-up-3 large-up-4">
+
+  <?php
+  $postcats = 'category=35';
+  $feat_posts = get_posts($postcats);
+  $bullets = 1;
+  foreach($feat_posts as $post) {
+
+        echo '<div class="column column-block">';
+
+        $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+        if(empty($thumb)) {
+          echo 'Error! A thumbnail is missing.';
+        } else {
+          echo '<a href="' . get_permalink() . '"><img src="' . $thumb[0] . '" class="thumbnail"></a></div>';
+        }
+  }
+  ?>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+
+
+<!--
   <div class="row small-up-2 medium-up-3 large-up-4">
     <div class="column column-block">
       <img src="//placehold.it/600x600" class="thumbnail" alt="">
@@ -27,4 +57,4 @@ Template Name: Partner Mosaic
       <img src="//placehold.it/600x600" class="thumbnail" alt="">
     </div>
   </div>
-</div>
+</div> -->
