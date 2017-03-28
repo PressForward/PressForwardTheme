@@ -46,18 +46,18 @@
 // 1. Global
 // ---------
 
-$global-font-size: 110%;
+$global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #FFA500,
+  primary: #f16722,
   secondary: #fefefe,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
 );
 $pforange: #f39c12;
-$pfgreen: #114c2a;
+$pfgreen: #2ecc71;
 $pfblue: #2980b9;
 $light-gray: #ecf0f1;
 $medium-gray: #95a5a6;
@@ -243,7 +243,7 @@ $breadcrumbs-item-slash: true;
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: 0.95em 1.10em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -416,7 +416,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: black;
-$menu-item-background-active: $white;
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-border: $light-gray;
@@ -616,8 +616,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $white;
-$topbar-submenu-background: $topbar-background;
+$topbar-background: none;
+$topbar-submenu-background: none;
 $topbar-title-spacing: 0.45rem 1rem 0 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;

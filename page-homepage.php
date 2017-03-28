@@ -47,6 +47,12 @@ Template Name: Homepage
 					<a class="button primary large" href="#">Download the Free WordPress Plugin</a>
 				</div>
 
+				<div class="row text-center row-rule">
+					<div class="small-3 small-centered columns">
+					<hr>
+				</div>
+				</div>
+
 
 			</div> <!-- end #block1 (large 12 columns) -->
 
@@ -56,12 +62,12 @@ Template Name: Homepage
 			<div class="row">
 
 					<div class="medium-8 small-12 columns">
-				<h2>Gather</h2>
+				<h1>Gather</h1>
 				<ul>
 					<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
 					<li>Grab content from around the web with the "Nominate This" bookmarklet.</li>
 				</ul>
-				<a class="hollow button secondary" href="#">Read more</a>
+				<a class="hollow button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
 				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_with_gravity.png';?>">
