@@ -4608,8 +4608,8 @@ body {
   .slider-container .slider-byline {
     margin-top: 20px; }
 
-.card:hover {
-  background-color: #323232; }
+.excerpt {
+  padding: 0 16px 16px 16px; }
 
 .menu-title a {
   color: black;

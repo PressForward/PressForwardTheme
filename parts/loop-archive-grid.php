@@ -20,19 +20,29 @@ $grid_columns = 2; ?>
 </div>
 -->
 		<!--Item: -->
-		<div class="large-5 columns panel large-offset-1" data-equalizer-watch>
+		<div class="large-6 columns panel" data-equalizer-watch>
 
 			<article class="card" id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article">
 
 				<section class="featured-image" itemprop="articleBody">
 					<?php the_post_thumbnail('full'); ?>
 				</section> <!-- end article section -->
-        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-				<header class="article-header card-section">
-					<h3 class="title"><?php the_title(); ?></h3>
 
-				</header> <!-- end article header -->
-        </a>
+				<header class="article-header card-section">
+
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+          <h4 class="title"><?php the_title(); ?></h4>
+          </a>
+
+          <p class="byline">Posted on <?php the_time('F j, Y') ?> by <?php the_author_posts_link(); ?><br>
+          <?php the_category(', ') ?></p>
+
+        </header> <!-- end article header -->
+
+
+        <?php $excerpt = get_the_excerpt( $post ) ?>
+        <p class="excerpt"><?php echo $excerpt; ?></p>
+
 			</article> <!-- end article -->
 
 		</div>
