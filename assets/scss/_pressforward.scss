@@ -35,7 +35,9 @@ body{
 	}
 }
 
-
+.card:hover {
+  background-color: $black;
+}
 .menu-title a {
   color: black;
   font-family: 'Montserrat';

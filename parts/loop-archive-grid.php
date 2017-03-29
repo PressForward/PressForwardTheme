@@ -27,12 +27,12 @@ $grid_columns = 2; ?>
 				<section class="featured-image" itemprop="articleBody">
 					<?php the_post_thumbnail('full'); ?>
 				</section> <!-- end article section -->
-
+        <a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
 				<header class="article-header card-section">
-					<h3 class="title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-					<?php get_template_part( 'parts/content', 'byline' ); ?>
-				</header> <!-- end article header -->
+					<h3 class="title"><?php the_title(); ?></h3>
 
+				</header> <!-- end article header -->
+        </a>
 			</article> <!-- end article -->
 
 		</div>
