@@ -70,7 +70,7 @@ Template Name: Homepage
 				<a class="button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/logo_with_gravity.png';?>">
+				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/gather_logo.png';?>">
 			</div>
 
 		</div>
@@ -84,7 +84,7 @@ Template Name: Homepage
 		<div id="block3" class="expanded row">
 			<div class="row">
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/placeholder.jpg';?>">
+				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/organize_logo.png';?>">
 			</div>
 			<div class="large-8 medium-8 small-12 columns">
 				<h1>Organize</h1>
@@ -115,7 +115,7 @@ Template Name: Homepage
 				<a class="button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/placeholder.jpg';?>">
+				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/publish_logo.png';?>">
 			</div>
 		</div>
 		<div class="row text-center row-rule">
