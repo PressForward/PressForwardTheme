@@ -83,18 +83,19 @@ Template Name: Homepage
 
 		<div id="block3" class="expanded row">
 			<div class="row">
+				<div class="large-8 medium-8 small-12 columns">
+					<h1>Organize</h1>
+					<ul>
+						<li>Read and review content without leaving your WordPress dashboard.</li>
+						<li>Select and draft the posts you want to share with your community</li>
+						<li>Use folders to group feeds and filter posts</li>
+					</ul>
+					<a class="button primary" href="#">Read more</a>
+				</div>
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/organize_logo.png';?>">
+				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/untitled-2.png';?>">
 			</div>
-			<div class="large-8 medium-8 small-12 columns">
-				<h1>Organize</h1>
-				<ul>
-					<li>Read and review content without leaving your WordPress dashboard.</li>
-					<li>Select and draft the posts you want to share with your community</li>
-					<li>Use folders to group feeds and filter posts</li>
-				</ul>
-				<a class="button primary" href="#">Read more</a>
-			</div>
+
 		</div>
 		<div class="row text-center row-rule">
 			<div class="small-3 small-centered columns">
@@ -115,7 +116,7 @@ Template Name: Homepage
 				<a class="button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/publish_logo.png';?>">
+				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/untitled-3.png';?>">
 			</div>
 		</div>
 		<div class="row text-center row-rule">
@@ -197,6 +198,7 @@ Template Name: Homepage
 	</div>
 	</div><!--  close .row #slider -->
 	</div>
+
 	</div>
 	<!-- </div> end content -->
 

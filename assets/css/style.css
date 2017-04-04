@@ -926,7 +926,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
+  background: white;
   font-family: "Montserrat", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
@@ -2225,7 +2225,7 @@ legend {
     margin: 0;
     margin-left: -0.1875rem;
     padding: 0 0.1875rem;
-    background: #fefefe; }
+    background: white; }
 
 select {
   height: 2.4375rem;
@@ -2964,7 +2964,7 @@ select {
   visibility: hidden;
   border: 1px solid #95a5a6;
   border-radius: 5px;
-  background-color: #fefefe;
+  background-color: white;
   font-size: 1rem; }
   .dropdown-pane.is-open {
     visibility: visible; }
@@ -4607,6 +4607,12 @@ body {
     width: 60%; }
   .slider-container .slider-byline {
     margin-top: 20px; }
+
+footer {
+  margin-bottom: 20px; }
+
+.footericon {
+  padding: 9px 9px 9px 0px; }
 
 .widget > ul > li {
   border-bottom: 1px solid #e6e6e6;
