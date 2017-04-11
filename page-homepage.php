@@ -116,7 +116,7 @@ Template Name: Homepage
 				<a class="button primary" href="#">Read more</a>
 			</div>
 			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/untitled-3.png';?>">
+				<img class="homepageimage" style="height:325px;" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/untitled-3.png';?>">
 			</div>
 		</div>
 		<div class="row text-center row-rule">
@@ -155,10 +155,7 @@ Template Name: Homepage
 					$trimexcerpt = get_post_field('post_content', $id);
 					$authorid = $post->post_author;
 					include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-					if ( is_plugin_active( 'pressforward/pressforward.php' ) ) {
-	  			//plugin is activated
-					$itemauth = get_post_meta($post->ID, 'item_author', true);
-					}
+
 	        $shortexcerpt = wp_trim_words( $trimexcerpt, $numwords = 75, $more = '… ' );
 							echo '<li class="orbit-slide">';
 							echo '<div class="row">';
