@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homepage Alt
+Template Name: Homepage
 */
 ?>
 <?php get_header(); ?>
@@ -102,7 +102,11 @@ Template Name: Homepage Alt
 		</div>
 		</div> <!--close blocktest -->
 
-
+		<div class="row text-center row-rule">
+			<div class="small-3 small-centered columns">
+			<hr>
+		</div>
+		</div>
 
 	<div id="content2" class="slider-container">
 	<div class="row">
