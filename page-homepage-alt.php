@@ -69,7 +69,6 @@ Template Name: Homepage Alt
 									<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
 									<li>Grab content from around the web with the "Nominate This" bookmarklet.</li>
 								</ul>
-								<a class="button primary" href="#">Read more</a>
 							</div>
 					</div>
 
@@ -81,7 +80,6 @@ Template Name: Homepage Alt
 		 						<li>Select and draft the posts you want to share with your community</li>
 		 						<li>Use folders to group feeds and filter posts</li>
 		 					</ul>
-		 					<a class="button primary" href="#">Read more</a>
 						 </div>
 				 </div>
 
