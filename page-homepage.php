@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Homepage
+Template Name: Homepage Alt
 */
 ?>
 <?php get_header(); ?>
@@ -58,73 +58,49 @@ Template Name: Homepage
 
 		</div> <!-- end #inner-content (row) -->
 
-		<div id="block2" class="expanded row">
+
+		<div id="blocktest" class="expanded row">
 			<div class="row">
+			<div class="large-8 columns">
+					<div class="row">
+							<div class="large-12 feature-row">
+								<h1>Gather</h1>
+								<ul>
+									<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
+									<li>Grab content from around the web with the "Nominate This" bookmarklet.</li>
+								</ul>
+							</div>
+					</div>
 
-					<div class="medium-8 small-12 columns">
-				<h1>Gather</h1>
-				<ul>
-					<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
-					<li>Grab content from around the web with the "Nominate This" bookmarklet.</li>
-				</ul>
-				<a class="button primary" href="#">Read more</a>
+					<div class="row">
+						 <div class="large-12 feature-row">
+							 <h1>Organize</h1>
+		 					<ul>
+		 						<li>Read and review content without leaving your WordPress dashboard.</li>
+		 						<li>Select and draft the posts you want to share with your community</li>
+		 						<li>Use folders to group feeds and filter posts</li>
+		 					</ul>
+						 </div>
+				 </div>
+
+				 <div class="row">
+						 <div class="large-12 feature-row">
+							 <h1>Publish</h1>
+			 				<ul>
+			 					<li>Preserve original metadata and redirect to the source.</li>
+			 					<li>Amplify chosen content by publishing it to your site or sharing it on twitter.</li>
+			 					<li>Engage your community by featuring recent and relevant content all in one place.</li>
+			 				</ul>
+			 				<a class="button primary" href="#">Read more</a>
+						 </div>
+				 </div>
+
 			</div>
-			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/gather_logo.png';?>">
-			</div>
-
-		</div>
-		<div class="row text-center row-rule">
-			<div class="small-3 small-centered columns">
-			<hr>
-		</div>
-		</div>
-	</div>
-
-		<div id="block3" class="expanded row">
-			<div class="row">
-				<div class="large-8 medium-8 small-12 columns">
-					<h1>Organize</h1>
-					<ul>
-						<li>Read and review content without leaving your WordPress dashboard.</li>
-						<li>Select and draft the posts you want to share with your community</li>
-						<li>Use folders to group feeds and filter posts</li>
-					</ul>
-					<a class="button primary" href="#">Read more</a>
-				</div>
-			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/untitled-2.png';?>">
-			</div>
-
-		</div>
-		<div class="row text-center row-rule">
-			<div class="small-3 small-centered columns">
-			<hr>
-		</div>
-		</div>
-	</div>
-
-		<div id="block4" class="expanded row">
-			<div class="row">
-			<div class="large-8 medium-8 small-12 columns">
-				<h1>Publish</h1>
-				<ul>
-					<li>Preserve original metadata and redirect to the source.</li>
-					<li>Amplify chosen content by publishing it to your site or sharing it on twitter.</li>
-					<li>Engage your community by featuring recent and relevant content all in one place.</li>
-				</ul>
-				<a class="button primary" href="#">Read more</a>
-			</div>
-			<div class="large-4 medium-4 small-12 columns">
-				<img class="homepageimage" style="height:325px;" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/untitled-3.png';?>">
+			<div class="large-4 columns">
+					<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/full_one_filter_3.png';?>">
 			</div>
 		</div>
-		<div class="row text-center row-rule">
-			<div class="small-3 small-centered columns">
-			<hr>
-		</div>
-		</div>
-	</div>
+		</div> <!--close blocktest -->
 
 
 
@@ -155,7 +131,10 @@ Template Name: Homepage
 					$trimexcerpt = get_post_field('post_content', $id);
 					$authorid = $post->post_author;
 					include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-
+					if ( is_plugin_active( 'pressforward/pressforward.php' ) ) {
+	  			//plugin is activated
+					$itemauth = get_post_meta($post->ID, 'item_author', true);
+					}
 	        $shortexcerpt = wp_trim_words( $trimexcerpt, $numwords = 75, $more = '… ' );
 							echo '<li class="orbit-slide">';
 							echo '<div class="row">';
