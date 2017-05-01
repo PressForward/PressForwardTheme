@@ -99,7 +99,7 @@ Template Name: Homepage Alt
 
 			</div>
 			<div class="large-4 columns">
-					<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/full_one_filter_small.png';?>">
+					<img class="homepageimage" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/full_one_filter_3.png';?>">
 			</div>
 		</div>
 		</div> <!--close blocktest -->
