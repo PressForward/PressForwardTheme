@@ -63,7 +63,7 @@ Template Name: Homepage Alt
 			<div class="row">
 			<div class="large-8 columns">
 					<div class="row">
-							<div class="large-12">
+							<div class="large-12 feature-row">
 								<h1>Gather</h1>
 								<ul>
 									<li>Add feeds to the RSS reader to bring all your content to PressForward.</li>
@@ -74,7 +74,7 @@ Template Name: Homepage Alt
 					</div>
 
 					<div class="row">
-						 <div class="large-12">
+						 <div class="large-12 feature-row">
 							 <h1>Organize</h1>
 		 					<ul>
 		 						<li>Read and review content without leaving your WordPress dashboard.</li>
@@ -86,7 +86,7 @@ Template Name: Homepage Alt
 				 </div>
 
 				 <div class="row">
-						 <div class="large-12">
+						 <div class="large-12 feature-row">
 							 <h1>Publish</h1>
 			 				<ul>
 			 					<li>Preserve original metadata and redirect to the source.</li>

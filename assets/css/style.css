@@ -4596,6 +4596,10 @@ body {
 .docs {
   border: 1px solid #e6e6e6; }
 
+.feature-row {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .slider-container {
   padding: 30px 0 25px 0; }
   .slider-container h1 {
