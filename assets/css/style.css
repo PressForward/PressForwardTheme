@@ -4600,6 +4600,10 @@ body {
   margin-top: 35px;
   margin-bottom: 35px; }
 
+.featuredimage {
+  float: left;
+  padding: 25px 25px 25px 0; }
+
 .slider-container {
   padding: 30px 0 25px 0; }
   .slider-container h1 {

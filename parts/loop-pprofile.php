@@ -4,7 +4,7 @@
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
     </header> <!-- end article header -->
 
-<section class="entry-content large-9 medium-9 columns" itemprop="articleBody">
+<section class="entry-content large-8 medium-8 columns" itemprop="articleBody">
   <div class="featuredimage">
     <?php the_post_thumbnail('medium'); ?>
 </div>
@@ -15,16 +15,25 @@
 
 
 </section> <!-- end article section -->
-<section class="entry-content large-3 medium-3 columns">
+<section class="entry-content large-4 medium-4 columns">
+  <?php $launchyear = get_post_meta($post->ID, "Date_launched", false);
+  if (!empty($launchyear)) {
+    echo '<h3>Publication Details</h3>';
+    echo '<p>Launched in: ' . implode($launchyear) . '</p>';
+  } ?>
+
+
   <?php $links = get_post_meta($post->ID, "Links", false);
   if (!empty($links)) {
-    echo '<h3>Links:</h3>';
+    echo '<h4>Links:</h4>';
     echo '<ul>';
     foreach($links as $link) {
     echo '<li>' . $link . '</li>';
     }
     echo '</ul>';
   } ?>
+
+  <a class="button primary">View Site</a>
 </section>
 
 <div class="row text-center row-rule">
@@ -39,6 +48,14 @@
         echo '<h3>Press</h3>';
         echo '<p>' . implode($press) . '</p>';
       } ?>
+</section>
+<section class="entry content large-12 medium-12 columns">
+  <?php $orgchart = get_post_meta($post->ID, "OrgChart", false ); ?>
+  <?php $orgchart_alt = get_post_meta($post->ID, "OrgChart_AltText", false ); ?>
+  <?php if(!empty($orgchart)) {
+    echo '<h3>Organizational Chart</h3>';
+    echo '<img src="' . implode($orgchart) . '" alt="' . implode($orgchart_alt) . '">';
+  } ?>
 
 </section>
 	<footer class="article-footer">
