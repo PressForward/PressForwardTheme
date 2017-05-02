@@ -4,23 +4,18 @@
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
     </header> <!-- end article header -->
 
-<section class="entry-content large-8 medium-8 columns" itemprop="articleBody">
-			<?php if ( has_post_thumbnail( get_the_ID() ) ): ?>
-		<div class="media-object">
-			  <div class="media-object-section">
-			    <div class="thumbnail">
-		           <?php the_post_thumbnail('full'); ?>
-	       </div>
-       </div>
-       <div class="media-object-section main-section">
-		        <?php the_content(); ?>
-	     </div>
-    </div> <?php else: ?>
-	     <?php the_content();
-     endif; ?>
+<section class="entry-content large-9 medium-9 columns" itemprop="articleBody">
+  <div class="featuredimage">
+    <?php the_post_thumbnail('medium'); ?>
+</div>
+
+
+
+	     <?php the_content(); ?>
+
 
 </section> <!-- end article section -->
-<section class="entry-content large-4 medium-4 columns">
+<section class="entry-content large-3 medium-3 columns">
   <?php $links = get_post_meta($post->ID, "Links", false);
   if (!empty($links)) {
     echo '<h3>Links:</h3>';
