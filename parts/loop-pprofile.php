@@ -21,14 +21,30 @@
 
 </section> <!-- end article section -->
 <section class="entry-content large-4 medium-4 columns">
-  <?php $links = get_post_meta($post->ID, "Links", true);
+  <?php $links = get_post_meta($post->ID, "Links", false);
   if (!empty($links)) {
-    echo "<ul>";
+    echo '<h3>Links:</h3>';
+    echo '<ul>';
     foreach($links as $link) {
-    echo "<li>" . $link . "</li>";
+    echo '<li>' . $link . '</li>';
     }
-    echo "</ul>";
+    echo '</ul>';
   } ?>
+</section>
+
+<div class="row text-center row-rule">
+  <div class="small-3 small-centered columns">
+  <hr>
+</div>
+</div>
+
+<section class="entry-content large-12 medium-12 columns">
+<?php $press = get_post_meta($post->ID, "PressRelease", false); ?>
+      <?php if(!empty($press)) {
+        echo '<h3>Press</h3>';
+        echo '<p>' . implode($press) . '</p>';
+      } ?>
+
 </section>
 	<footer class="article-footer">
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jointswp' ), 'after'  => '</div>' ) ); ?>
