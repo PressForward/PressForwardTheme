@@ -28,7 +28,7 @@ function joints_register_sidebars() {
 		'after_title' => '</h4>',
 	));
 	register_sidebar(array(
-		'id' => 'research-page-sidebar',
+		'id' => 'research-sidebar',
 		'name' => __('Research Sidebar', 'jointswp'),
 		'description' => __('The second (secondary) sidebar.', 'jointswp'),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
