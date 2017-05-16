@@ -4,7 +4,7 @@
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left float-left">
 		<ul class="menu">
-			<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
+			<li class="menu-title"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/pflogo-updated-3-28.png" alt="PressForward"';?>"></a></li>
 		</ul>
 	</div>
 	<div class="top-bar-right show-for-medium">
