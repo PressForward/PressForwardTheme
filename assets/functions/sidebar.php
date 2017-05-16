@@ -1,4 +1,11 @@
 <?php
+
+
+// register_sidebar( array(
+//     'id'          => 'research-page-sidebar',
+//     'name'        => __( 'Resarch Page Sidebar', 'jointswp'),
+//     'description' => __( 'This is the sidebar for the Research page(s).', 'jointswp' ),
+// ) );
 // SIDEBARS AND WIDGETIZED AREAS
 function joints_register_sidebars() {
 	register_sidebar(array(
@@ -20,7 +27,15 @@ function joints_register_sidebars() {
 		'before_title' => '<h4 class="widgettitle">',
 		'after_title' => '</h4>',
 	));
-
+	register_sidebar(array(
+		'id' => 'research-page-sidebar',
+		'name' => __('Research Sidebar', 'jointswp'),
+		'description' => __('The second (secondary) sidebar.', 'jointswp'),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widgettitle">',
+		'after_title' => '</h4>',
+	));
 	/*
 	to add more sidebars or widgetized areas, just copy
 	and edit the above sidebar code. In order to call
