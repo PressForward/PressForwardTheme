@@ -13,7 +13,7 @@ Template Name: Partner Mosaic
 <div class="row small-up-2 medium-up-3 large-up-4">
 
   <?php
-  $postcats = 'category=35';
+  $postcats = array('post_type'  => 'partner');
   $feat_posts = get_posts($postcats);
   $bullets = 1;
   foreach($feat_posts as $post) {
