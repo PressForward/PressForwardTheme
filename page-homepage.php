@@ -44,7 +44,7 @@ Template Name: Homepage
         		</div>
 
 				<div class="row text-center" id="downloadbtn">
-					<a class="button primary large" href="#">Download the Free WordPress Plugin</a>
+					<a class="button primary large" href="http://www.wordpress.org/plugins/pressforward">Download the Free WordPress Plugin</a>
 				</div>
 
 				<div class="row text-center row-rule">
@@ -118,14 +118,6 @@ Template Name: Homepage
 	    	<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
 				<?php
-				//get slider category ids from customizer option
-
-
-				//$slider_categories_option = Kirki::get_option( 'pftk_opts', 'slider_category');
-				//get number of posts from customizer option
-				//$slider_numposts_option = Kirki::get_option( 'pftk_opts', 'slider_numposts' );
-				//$slider_title_num_words = Kirki::get_option('pftk_opts', 'slider-title-numwords');
-				//$slider_excerpt_num_words = Kirki::get_option('pftk_opts', 'slider-excerpt-numwords');
 				$postcats = array('post_type'  => 'usecase');
 				$feat_posts = get_posts($postcats);
 				$bullets = 1;
