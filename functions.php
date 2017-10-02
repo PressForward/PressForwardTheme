@@ -23,7 +23,32 @@ require_once(get_template_directory().'/assets/functions/page-navi.php');
 // Adds support for multiple languages
 require_once(get_template_directory().'/assets/translation/translation.php');
 
+add_action( 'init', 'pf_custom_post_types' );
 
+function pf_custom_post_types() {
+  register_post_type( 'partner',
+    array(
+      'labels' => array(
+        'name' => __( 'Partners' ),
+        'singular_name' => __( 'Partner' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', 'revisions' ),
+      'menu_icon' => 'dashicons-laptop'
+    )
+  );
+}
+
+$args = array(
+	'name'          => __( 'Resources', 'pftheme' ),
+	'id'            => 'pf-resources-sidebar',
+	'description'   => '',
+        'class'         => '',
+	'before_widget' => '<li id="%1$s" class="widget %2$s">',
+	'after_widget'  => '</li>',
+	'before_title'  => '<h2 class="widgettitle">',
+	'after_title'   => '</h2>' ); 
 // Remove 4.2 Emoji Support
 // require_once(get_template_directory().'/assets/functions/disable-emoji.php');
 

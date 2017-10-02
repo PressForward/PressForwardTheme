@@ -16,7 +16,7 @@
 
 </section> <!-- end article section -->
 <section class="entry-content large-4 medium-4 columns">
-  <?php $launchyear = get_post_meta($post->ID, "Date_launched", false);
+  <?php $launchyear = get_post_meta($post->ID, "date_launched", false);
   if (!empty($launchyear)) {
     echo '<h3>Publication Details</h3>';
     echo '<p>Launched in: ' . implode($launchyear) . '</p>';
@@ -32,8 +32,11 @@
     }
     echo '</ul>';
   } ?>
+	<?php $site_url = get_post_meta($post->ID, "site_url", false);
+	if (!empty($site_url)) {
+  echo '<a class="button primary" href="' . implode($site_url) . '">View Site</a>';
+	} ?>
 
-  <a class="button primary">View Site</a>
 </section>
 
 <div class="row text-center row-rule">
@@ -43,14 +46,14 @@
 </div>
 
 <section class="entry-content large-12 medium-12 columns">
-<?php $press = get_post_meta($post->ID, "PressRelease", false); ?>
+<?php $press = get_post_meta($post->ID, "press_release", false); ?>
       <?php if(!empty($press)) {
         echo '<h3>Press</h3>';
         echo '<p>' . implode($press) . '</p>';
       } ?>
 </section>
 <section class="entry content large-12 medium-12 columns">
-  <?php $orgchart = get_post_meta($post->ID, "OrgChart", false ); ?>
+  <?php $orgchart = get_post_meta($post->ID, "org_chart", false ); ?>
   <?php $orgchart_alt = get_post_meta($post->ID, "OrgChart_AltText", false ); ?>
   <?php if(!empty($orgchart)) {
     echo '<h3>Organizational Chart</h3>';

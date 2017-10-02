@@ -1,6 +1,7 @@
 <?php
 /*
-Template Name: Research Pages Template
+Template Name: Partner Profile
+Template Post Type: partner
 */
 ?>
 <?php get_header(); ?>
@@ -9,10 +10,10 @@ Template Name: Research Pages Template
 
   <div id="inner-content" class="row">
 
-    <main id="main" class="large-8 medium-8 columns" role="main">
+    <main id="main" class="large-12 medium-12 columns" role="main">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-          <?php get_template_part( 'parts/loop', 'page' ); ?>
+          <?php get_template_part( 'parts/loop', 'pprofile' ); ?>
 
         <?php endwhile; else : ?>
 
@@ -22,7 +23,7 @@ Template Name: Research Pages Template
 
     </main> <!-- end #main -->
 
-    <?php get_sidebar('research-sidebar'); ?>
+    <!-- <?php get_sidebar(); ?> -->
 
   </div> <!-- end #inner-content -->
 
