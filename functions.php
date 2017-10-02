@@ -38,7 +38,22 @@ function pf_custom_post_types() {
       'menu_icon' => 'dashicons-laptop'
     )
   );
+  register_post_type( 'usecase',
+    array(
+      'labels' => array(
+        'name' => __( 'Use Case' ),
+        'singular_name' => __( 'Use Cases' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields', 'page-attributes', 'revisions' ),
+      'menu_icon' => 'dashicons-admin-site'
+    )
+  );
 }
+
+
+
 
 $args = array(
 	'name'          => __( 'Resources', 'pftheme' ),
@@ -48,7 +63,7 @@ $args = array(
 	'before_widget' => '<li id="%1$s" class="widget %2$s">',
 	'after_widget'  => '</li>',
 	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => '</h2>' ); 
+	'after_title'   => '</h2>' );
 // Remove 4.2 Emoji Support
 // require_once(get_template_directory().'/assets/functions/disable-emoji.php');
 

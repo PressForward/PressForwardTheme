@@ -126,19 +126,13 @@ Template Name: Homepage
 				//$slider_numposts_option = Kirki::get_option( 'pftk_opts', 'slider_numposts' );
 				//$slider_title_num_words = Kirki::get_option('pftk_opts', 'slider-title-numwords');
 				//$slider_excerpt_num_words = Kirki::get_option('pftk_opts', 'slider-excerpt-numwords');
-				$postcats = 'category=34&posts_per_page=4';
+				$postcats = array('post_type'  => 'usecase');
 				$feat_posts = get_posts($postcats);
 				$bullets = 1;
 				foreach($feat_posts as $post) {
 	        $trim_title = get_post_field('post_title', $id);
 	        $short_title = wp_trim_words( $trim_title, $numwords = 25, $more = '… ' );
 					$trimexcerpt = get_post_field('post_content', $id);
-					$authorid = $post->post_author;
-					include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-					if ( is_plugin_active( 'pressforward/pressforward.php' ) ) {
-	  			//plugin is activated
-					$itemauth = get_post_meta($post->ID, 'item_author', true);
-					}
 	        $shortexcerpt = wp_trim_words( $trimexcerpt, $numwords = 75, $more = '… ' );
 							echo '<li class="orbit-slide">';
 							echo '<div class="row">';
