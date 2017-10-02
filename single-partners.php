@@ -23,7 +23,7 @@ Template Post Type: partner
 
     </main> <!-- end #main -->
 
-    <!-- <?php get_sidebar(); ?> -->
+
 
   </div> <!-- end #inner-content -->
 
