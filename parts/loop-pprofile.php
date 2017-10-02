@@ -32,6 +32,7 @@
     }
     echo '</ul>';
   } ?>
+	
 	<?php $site_url = get_post_meta($post->ID, "site_url", false);
 	if (!empty($site_url)) {
   echo '<a class="button primary" href="' . implode($site_url) . '">View Site</a>';

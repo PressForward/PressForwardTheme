@@ -54,16 +54,6 @@ function pf_custom_post_types() {
 
 
 
-
-$args = array(
-	'name'          => __( 'Resources', 'pftheme' ),
-	'id'            => 'pf-resources-sidebar',
-	'description'   => '',
-        'class'         => '',
-	'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</li>',
-	'before_title'  => '<h2 class="widgettitle">',
-	'after_title'   => '</h2>' );
 // Remove 4.2 Emoji Support
 // require_once(get_template_directory().'/assets/functions/disable-emoji.php');
 
