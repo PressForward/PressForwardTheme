@@ -5,7 +5,7 @@
 		<div id="inner-content" class="row">
 
 		    <main id="main" class="large-12 medium-12 columns" role="main">
-					<?php query_posts('cat=-34,-35&posts_per_page=5000'); ?> 
+					<?php query_posts('cat=-34,-35&posts_per_page=5000'); ?>
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<!-- To see additional archive styles, visit the /parts directory -->
@@ -23,7 +23,6 @@
 
 		    </main> <!-- end #main -->
 
-		    <!-- <?php  get_sidebar(); ?> -->
 
 		</div> <!-- end #inner-content -->
 
