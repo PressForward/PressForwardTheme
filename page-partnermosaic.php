@@ -35,26 +35,4 @@ Template Name: Partner Mosaic
 </div>
 
 
-
-<!--
-  <div class="row small-up-2 medium-up-3 large-up-4">
-    <div class="column column-block">
-      <img src="//placehold.it/600x600" class="thumbnail" alt="">
-    </div>
-    <div class="column column-block">
-      <img src="//placehold.it/600x600" class="thumbnail" alt="">
-    </div>
-    <div class="column column-block">
-      <img src="//placehold.it/600x600" class="thumbnail" alt="">
-    </div>
-    <div class="column column-block">
-      <img src="//placehold.it/600x600" class="thumbnail" alt="">
-    </div>
-    <div class="column column-block">
-      <img src="//placehold.it/600x600" class="thumbnail" alt="">
-    </div>
-    <div class="column column-block">
-      <img src="//placehold.it/600x600" class="thumbnail" alt="">
-    </div>
-  </div>
-</div> -->
+<?php get_footer(); ?>
