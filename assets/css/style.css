@@ -4584,6 +4584,12 @@ PLUGIN STYLES
   list-style: none outside none;
   margin: 0; }
 
+.orbit-previous, .orbit-next {
+  display: none; }
+
+.orbit-bullets button.is-active {
+  background-color: #f16722; }
+
 body {
   background-image: url("../images/noise.png"); }
 

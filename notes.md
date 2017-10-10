@@ -13,11 +13,11 @@ This WordPress theme is composed of several parts. A special homepage template (
 
 
 ## To Do's 10/10
-* fix use case page template to show custom sidebar with other use case links.
-  * make the featured image bigger
-  * remove the byline
+* fix use case page template to show custom sidebar with other use case links. (done)
+  * make the featured image bigger (done)
+  * remove the byline (done)
 * high res logo
-* link to features page
+* link to features page 
 * fix content column widths on homepage slider
 * search bar
 * side bar on news page?

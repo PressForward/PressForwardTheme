@@ -128,14 +128,14 @@ Template Name: Homepage
 	        $shortexcerpt = wp_trim_words( $trimexcerpt, $numwords = 75, $more = '… ' );
 							echo '<li class="orbit-slide">';
 							echo '<div class="row">';
-							echo '<div class="medium-11 large-11 columns"><h2>' . $short_title . '</h2></div></div>';
+							echo '<div class="medium-12 large-12 columns"><h2>' . $short_title . '</h2></div></div>';
 							echo '<div class="row">';
-							echo '<div class="medium-6 large-7 columns">';
+							echo '<div class="medium-8 large-8 columns">';
 
 							echo '<p class="info-title">' . $shortexcerpt . '</p> <a href="' . get_permalink() . '
 							" alt="' . get_the_title() . '" class="hollow button primary">Read More</a></div>';
 							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
-							echo '<div class="large-5 medium-6 columns">';
+							echo '<div class="large-4 medium-4  columns">';
 							if(empty($thumb)) {
 								echo '';
 							} else {

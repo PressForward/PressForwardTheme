@@ -1,3 +1,10 @@
+.orbit-previous, .orbit-next {
+  display: none;
+}
+.orbit-bullets button.is-active {
+  background-color: $pforange;
+  }
+
 
 body{
   background-image: url('../images/noise.png')
