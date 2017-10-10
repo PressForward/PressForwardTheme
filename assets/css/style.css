@@ -4590,6 +4590,9 @@ PLUGIN STYLES
 .orbit-bullets button.is-active {
   background-color: #f16722; }
 
+.orbit-bullets button:hover {
+  background-color: #f16722; }
+
 body {
   background-image: url("../images/noise.png"); }
 
