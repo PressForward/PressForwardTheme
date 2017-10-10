@@ -1,8 +1,8 @@
-<div id="sidebar1" class="sidebar large-2 medium-2 columns" role="complementary">
+<div id="sidebar1" class="sidebar large-3 medium-3 columns" role="complementary">
 
-	<?php if ( is_active_sidebar( 'usecase-sidebar' ) ) : ?>
+	<?php if ( is_active_sidebar( 'usecasessb' ) ) : ?>
 
-		<?php dynamic_sidebar( 'usecase-sidebar' ); ?>
+		<?php dynamic_sidebar( 'usecasessb' ); ?>
 
 	<!-- This content shows up if there are no widgets defined in the backend. -->
 	<?php else: ?>
