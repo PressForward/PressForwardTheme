@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: Use Cases Template
-Template Post Type: use case
+Template Post Type: usecase
 */
 ?>
 <?php get_header(); ?>
