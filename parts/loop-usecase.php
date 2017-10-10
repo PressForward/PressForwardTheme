@@ -2,25 +2,18 @@
 
 	<header class="article-header">
 		<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-		<?php get_template_part( 'parts/content', 'byline' ); ?>
     </header> <!-- end article header -->
 
-    <section class="entry-content" itemprop="articleBody">
-			<?php if ( has_post_thumbnail( get_the_ID() ) ): ?>
-			<div class="media-object">
-			  <div class="media-object-section">
-			    <div class="thumbnail">
-		<?php the_post_thumbnail('full'); ?>
-	</div>
-</div>
-<div class="media-object-section main-section">
-		<?php the_content(); ?>
-	</div>
-</div> <?php else: ?>
-	<?php the_content();
-	endif ?>
+<section class="entry-content" itemprop="articleBody">
+    <div class="featuredimage">
+    <?php the_post_thumbnail('medium'); ?>
+  </div>
+  <?php the_content(); ?>
 
-	</section> <!-- end article section -->
+
+</section> <!-- end article section -->
+
+
 
 	<footer class="article-footer">
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'jointswp' ), 'after'  => '</div>' ) ); ?>
