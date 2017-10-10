@@ -10,3 +10,16 @@ This WordPress theme is composed of several parts. A special homepage template (
   * press (text of press release)
   * org_chart (image url for organizational chart if applicable)
 * Also supports a blurb about the partner to be entered in the main editor box and a featured image.
+
+
+## To Do's 10/10
+* fix use case page template to show custom sidebar with other use case links.
+  * make the featured image bigger
+  * remove the byline
+* high res logo
+* link to features page
+* fix content column widths on homepage slider
+* search bar
+* side bar on news page?
+* indents on sidebar widget
+* link active color on homepage
