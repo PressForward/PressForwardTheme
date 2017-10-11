@@ -19,8 +19,8 @@ This WordPress theme is composed of several parts. A special homepage template (
 * high res logo (almost done - Josh is finishing)
 * link to features page (will do upon moving over since the link will change)
 * fix content column widths on homepage slider (done)
-* search bar
+* search bar (may skip)
 * side bar on news page?
 * indents on sidebar widget (done)
 * link active color on homepage (won't fix)
-* menu icon color on small screen
+* menu icon color on small screen (done)
