@@ -4632,6 +4632,13 @@ footer {
   padding-left: 15px;
   padding-right: 15px; }
 
+.widget > ul > li > ul > li {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .byline {
   border-bottom: 1px solid #e6e6e6;
   padding-bottom: 15px; }
