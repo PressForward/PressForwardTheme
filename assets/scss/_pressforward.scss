@@ -131,6 +131,9 @@ footer {
 }
 .homepageimage{
   margin: 15px;
+  @media #{$small-only} {
+    height: 300px;
+  }
 }
 #block2, #block3, #block4 {
   h1 {

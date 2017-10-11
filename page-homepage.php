@@ -137,7 +137,7 @@ Template Name: Homepage
 							if(empty($thumb)) {
 								echo '';
 							} else {
-								echo '<img src="' . $thumb[0] . '" class="thumbnail home"></div>';
+								echo '<img class="hide-for-small-only" src="' . $thumb[0] . '" class="thumbnail home"></div>';
 							}
 							echo '</div>';
 							echo '</li>';
