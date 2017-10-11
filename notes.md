@@ -16,10 +16,11 @@ This WordPress theme is composed of several parts. A special homepage template (
 * fix use case page template to show custom sidebar with other use case links. (done)
   * make the featured image bigger (done)
   * remove the byline (done)
-* high res logo
-* link to features page 
-* fix content column widths on homepage slider
+* high res logo (almost done - Josh is finishing)
+* link to features page (will do upon moving over since the link will change)
+* fix content column widths on homepage slider (done)
 * search bar
 * side bar on news page?
-* indents on sidebar widget
-* link active color on homepage
+* indents on sidebar widget (done)
+* link active color on homepage (won't fix)
+* menu icon color on small screen

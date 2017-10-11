@@ -4,7 +4,15 @@ and Foundation play nice together.
 */
 
 jQuery(document).ready(function() {
+console.log("test");
+jQuery('.search').bind('click', function(event) {
+    $(".search-field").toggleClass("expand-search");
 
+    // if the search field is expanded, focus on it
+    if ($(".search-field").hasClass("expand-search")) {
+      $(".search-field").focus();
+    }
+  })
     // Remove empty P tags created by WP inside of Accordion and Orbit
     jQuery('.accordion p:empty, .orbit p:empty').remove();
 
