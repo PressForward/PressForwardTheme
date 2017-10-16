@@ -10,7 +10,9 @@
     background-color: $pforange;
   }
 
-
+.logo {
+  max-width: 350px;
+}
 body{
   background-image: url('../images/noise.png')
 }
@@ -131,7 +133,7 @@ footer {
 }
 .homepageimage{
   margin: 15px;
-  @media #{$small-only} {
+  @include breakpoint(small only) {
     height: 300px;
   }
 }

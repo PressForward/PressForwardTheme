@@ -4593,6 +4593,9 @@ PLUGIN STYLES
 .orbit-bullets button:hover {
   background-color: #f16722; }
 
+.logo {
+  max-width: 350px; }
+
 body {
   background-image: url("../images/noise.png"); }
 
@@ -4689,6 +4692,9 @@ footer {
 
 .homepageimage {
   margin: 15px; }
+  @media screen and (max-width: 39.9375em) {
+    .homepageimage {
+      height: 300px; } }
 
 #block2 h1, #block3 h1, #block4 h1 {
   font-weight: 500;
