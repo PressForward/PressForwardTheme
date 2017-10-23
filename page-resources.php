@@ -22,7 +22,7 @@ Template Name: Research Pages Template
 
     </main> <!-- end #main -->
 
-    <?php get_sidebar('resources-sidebar'); ?>
+    <?php get_sidebar('resourcessb'); ?>
 
   </div> <!-- end #inner-content -->
 

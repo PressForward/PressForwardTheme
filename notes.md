@@ -24,3 +24,8 @@ This WordPress theme is composed of several parts. A special homepage template (
 * indents on sidebar widget (done)
 * link active color on homepage (won't fix)
 * menu icon color on small screen (done)
+
+
+## Theme/Site Launch To Do's 10/23
+* use case slider featured images need to be resized
+* 
