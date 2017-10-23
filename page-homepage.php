@@ -116,7 +116,7 @@ Template Name: Homepage
 	    	<button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
 				<?php
-				$postcats = array('post_type'  => 'usecase');
+				$postcats = array('post_type'  => 'usecase','posts_per_page'   => 15,);
 				$feat_posts = get_posts($postcats);
 				$bullets = 1;
 				foreach($feat_posts as $post) {
