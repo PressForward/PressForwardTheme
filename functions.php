@@ -25,6 +25,7 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 
 add_action( 'init', 'pf_custom_post_types' );
 
+
 function pf_custom_post_types() {
   register_post_type( 'partner',
     array(

@@ -132,12 +132,12 @@ Template Name: Homepage
 
 							echo '<p class="info-title">' . $shortexcerpt . '</p> <a href="' . get_permalink() . '
 							" alt="' . get_the_title() . '" class="hollow button primary">Read More</a></div>';
-							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium' );
+							$thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(200,200) );
 							echo '<div class="large-4 medium-4  columns">';
 							if(empty($thumb)) {
 								echo '';
 							} else {
-								echo '<img class="hide-for-small-only" src="' . $thumb[0] . '" class="thumbnail home"></div>';
+								echo '<img class="hide-for-small-only" style="height: 200px;" src="' . $thumb[0] . '" class="thumbnail home"></div>';
 							}
 							echo '</div>';
 							echo '</li>';
