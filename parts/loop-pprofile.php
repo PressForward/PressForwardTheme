@@ -16,13 +16,26 @@
 
 </section> <!-- end article section -->
 <section class="entry-content large-4 medium-4 columns">
+	<?php $site_url = get_post_meta($post->ID, "site_url", false);
+	if (!empty($site_url)) {
+  echo '<a class="button primary" href="' . implode($site_url) . '">View Site</a>';
+	} ?>
   <?php $launchyear = get_post_meta($post->ID, "date_launched", false);
   if (!empty($launchyear)) {
     echo '<h3>Publication Details</h3>';
     echo '<p>Launched in: ' . implode($launchyear) . '</p>';
   } ?>
 
-
+	<?php $missionstatement = get_post_meta($post->ID, "mission_statement", false);
+	if (!empty($missionstatement)) {
+		echo '<h4>Mission Statement</h4>';
+		echo '<p>' . implode($missionstatement) . '</p>';
+	} ?>
+<?php $pubstaff = get_post_meta( $post->ID, $key = 'publication_staff', $single = false );
+if (!empty($pubstaff)) {
+	echo '<h4>Publication Staff</h4>';
+	echo '<p>' . implode($pubstaff) . '</p>';
+} ?>
   <?php $links = get_post_meta($post->ID, "Links", false);
   if (!empty($links)) {
     echo '<h4>Links:</h4>';
@@ -32,11 +45,8 @@
     }
     echo '</ul>';
   } ?>
-	
-	<?php $site_url = get_post_meta($post->ID, "site_url", false);
-	if (!empty($site_url)) {
-  echo '<a class="button primary" href="' . implode($site_url) . '">View Site</a>';
-	} ?>
+
+
 
 </section>
 
