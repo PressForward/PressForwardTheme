@@ -28,4 +28,12 @@ This WordPress theme is composed of several parts. A special homepage template (
 
 ## Theme/Site Launch To Do's 10/23
 * use case slider featured images need to be resized
-* 
+* move mission statement and project staff over to the sidebar
+* make the workshop headings actual headings
+* microgrants should go on the resources page
+* search bar
+* resize images in usecase sidebar
+* fix link to pf documentation -- pull request
+* link documentation on website
+* description of the new tracking option on the preferences docs.
+* create favicon for pf (Josh)
