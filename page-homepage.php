@@ -89,7 +89,7 @@ Template Name: Homepage
 			 					<li>Amplify chosen content by publishing it to your site or sharing it on twitter.</li>
 			 					<li>Engage your community by featuring recent and relevant content all in one place.</li>
 			 				</ul>
-			 				<a class="button primary" href="#">Read more</a>
+			 				<a class="button primary" href="<?php echo get_site_url() . '/features' ?>">Read more</a>
 						 </div>
 				 </div>
 
